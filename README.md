@@ -24,7 +24,7 @@ tool文件夹下的resample.py，修改为你的文件夹路径
 
 5.使用validate.py,修改路径，生成验证集txt
 
-6.
+6.使用delete_number.py，修改路径，删除含有阿拉伯数字的文本
 
 7.python preprocess.py --text_index 2 --filelists path/to/filelist_train.txt path/to/filelist_val.txt
 
