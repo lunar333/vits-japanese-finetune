@@ -28,7 +28,7 @@ tool文件夹下的resample.py，修改为你的文件夹路径
 
 7.python preprocess.py --text_index 2 --filelists path/to/filelist_train.txt path/to/filelist_val.txt
 
-8.修改fine_tune.json,training_files,validation_files改为你的txt
+8.修改fine_tune.json,将training_files,validation_files改为你的txt路径
 
 ## Build monotonic alignment search
 ```sh
