@@ -2,12 +2,8 @@
 (Suggestion) Python == 3.7
 ## Clone this repository
 ```sh
-git clone https://github.com/CjangCjengh/vits.git
+git clone https://github.com/lunar333/vits-japanese-fintune.git
 ```
-## Choose cleaners
-- Fill "text_cleaners" in config.json
-- Edit text/symbols.py
-- Remove unnecessary imports from text/cleaners.py
 ## Install requirements
 ```sh
 pip install -r requirements.txt
@@ -47,22 +43,15 @@ python setup.py build_ext --inplace
 cd ..
 ```
 ## Train
-```sh
-# Single speaker
-python train.py -c <config> -m <folder>
 
 # Mutiple speakers
 python train_ms.py -c <config> -m <folder>
-```
+
+使用上面命令之后，使用ctrl+c取消，然后把G_0.pth和D.pth删除，把下面链接的预训练模型放入，重新开始训练
+
 ## Inference
 ### Online
 See [inference.ipynb](inference.ipynb)
-### Offline
-See [MoeGoe](https://github.com/CjangCjengh/MoeGoe)
 
-# Running in Docker
 
-```sh
-docker run -itd --gpus all --name "Container name" -e NVIDIA_DRIVER_CAPABILITIES=compute,utility -e NVIDIA_VISIBLE_DEVICES=all "Image name"
-```
 
